@@ -1,3 +1,69 @@
-p{
-    color:red;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+
+    h3 {
+        font-size: 25.5px;
+        font-weight: 700;
+        color: orange;
+        text-align: center;
+    }
+
+    .register {
+        display: inline-block;
+
+        .row {
+            .item {
+                label {
+                    margin-top: 10px;
+                    display: flex;
+                    text-align: left;
+                    font-size: 16px;
+                    font-weight: 400;
+                    margin-left: 5px;
+                }
+
+                input {
+                    padding-right: 120px;
+                }
+
+                .form-check-input {
+                    padding-right: 5px;
+                }
+            }
+
+            .item3 {
+                display: flex;
+                margin-top: 25px;
+
+                .form-check {
+                    margin-left: 15px;
+
+                    .form-check-input {
+                        margin-top: 13px;
+                        margin-right: 4px;
+                    }
+                }
+            }
+        }
+    }
+
+    button {
+        display: block;
+        position: absolute;
+        top: 230px;
+        right: 374px;
+        margin-top: 30px;
+        color: rgb(44, 43, 41);
+        padding-left: 25px;
+        padding-right: 25px;
+        background-color: rgb(225, 118, 52);
+
+    }
 }

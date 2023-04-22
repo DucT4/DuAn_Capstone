@@ -10,28 +10,75 @@
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <!-- min.css -->
-<link rel="stylesheet" href="/css/index.min.css">
+  <!-- min.css -->
+  <link rel="stylesheet" href="/css/index.min.css">
 </head>
 
 <body>
-  <header>
-    <!-- place navbar here -->
-  </header>
-  <main>
 
-  </main>
-  <footer>
-    <!-- place footer here -->
-  </footer>
+
+
+  <div class="container">
+    <h3>Register</h3>
+    <div class="register form-group">
+      <div class="row ">
+        <div class="col-6 item">
+          <label for="name"> Name</label>
+          <input id="name" class="form-control" placeholder="Name" type="text">
+        </div>
+        <div class="col-6 item">
+          <label for="email"> Email</label>
+          <input id="email" class="form-control" placeholder="Email" type="email">
+
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col-6 item">
+          <label for="passWord"> Password</label>
+          <input id="passWord" class="form-control" placeholder="Password" type="password">
+        </div>
+        <div class="col-6 item">
+          <label for="phone"> Phone</label>
+          <input id="phone" class="form-control" placeholder="Phone" type="text">
+
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col-6 item">
+          <label for="confirmPass"> Confirm Password</label>
+          <input id="confirmPass" class="form-control" placeholder="ComfirmPassword" type="password">
+        </div>
+        <div class="col-6 item item3">
+          <div class="form-check">
+            <label for="Gender">Gender</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Male
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Female
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-success" id="btnSubmit">Submit</button>
+  </div>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-  </script>
+    </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-  </script>
+    </script>
+    <!-- js -->
+    <script type="module" src="/js/register.js"></script>
 </body>
 
 </html>
