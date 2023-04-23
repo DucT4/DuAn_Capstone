@@ -20,6 +20,8 @@
 
         .row {
             .item {
+                position: relative;
+                margin-bottom: 20px;
                 label {
                     margin-top: 10px;
                     display: flex;
@@ -35,6 +37,19 @@
 
                 .form-check-input {
                     padding-right: 5px;
+                }
+
+                i {
+                    color: #d93025;
+                }
+
+                p {
+                    font-size: 13px;
+                    text-align: left;
+                    color: #d93025;
+                    position: absolute;
+                   
+                
                 }
             }
 
@@ -57,7 +72,7 @@
     button {
         display: block;
         position: absolute;
-        top: 230px;
+        top: 300px;
         right: 374px;
         margin-top: 30px;
         color: rgb(44, 43, 41);
