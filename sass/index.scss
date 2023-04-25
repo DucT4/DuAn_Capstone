@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 
 .thongtin {
@@ -83,6 +83,58 @@
 
     }
 }
+.header
+{
+    .container
+    {
+        display: flex;
+        justify-content: space-between;
+        background-color: #000;
+        height: 50px;
+        .logo
+        {
+            position: absolute;
+                width: 116px;
+                height: 32px;
+                left: 24px;
+                top: 10px;
+        }
+        .menu-header
+        {
+            display: flex;
+            justify-content: space-between;
+            .login
+            {
+                position: absolute;
+                width: 91px;
+                    height: 32px;
+                    left: 1300px;
+                    top: 14px;
+                text-decoration: none;
+                color: #F7F7F7;
+            }
+            .register
+            {
+                position: absolute;
+                width: 90px;
+                    height: 32px;
+                    left: 1390px;
+                    top: 15px;
+                text-decoration: none;
+                color: #F7F7F7;
+            }
+            .cart
+            {
+                position: absolute;
+                width: 60px;
+                    height: 30px;
+                    left: 1200px;
+                    top: 10px;
+            }
+        }
+    }
+}
+
 
 
 footer {
