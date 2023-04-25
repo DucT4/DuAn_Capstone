@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.container {
+.thongtin {
     text-align: center;
     position: relative;
 
@@ -22,6 +22,7 @@
             .item {
                 position: relative;
                 margin-bottom: 20px;
+
                 label {
                     margin-top: 10px;
                     display: flex;
@@ -48,8 +49,8 @@
                     text-align: left;
                     color: #d93025;
                     position: absolute;
-                   
-                
+
+
                 }
             }
 
@@ -80,5 +81,53 @@
         padding-right: 25px;
         background-color: rgb(225, 118, 52);
 
+    }
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 0 50px;
+   max-width: 100%;
+    .background {
+        background-color: azure;
+        background-size: cover;
+        width: 100%;
+        .row {
+            .item {
+                h3 {
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: rgb(44, 42, 42);
+                }
+
+                ul {
+                    li {
+                        list-style: none;
+                        margin-left: -27px;
+                        color: rgb(44, 42, 42);
+                        font-size: 14px;
+                        font-weight: 300;
+                    }
+                }
+
+                p {
+                    color: rgb(44, 42, 42);
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: #d93025;
+                    font-size: 14px;
+                    font-weight: 400;
+
+
+                }
+            }
+        }
     }
 }
