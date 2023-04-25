@@ -89,43 +89,46 @@ footer {
     position: fixed;
     bottom: 0;
     left: 0;
-    margin: 0 50px;
-   max-width: 100%;
+    background-size: cover;
+    width: 100%;
+
     .background {
-        background-color: azure;
-        background-size: cover;
+        background-color: rgb(34, 35, 33);
         width: 100%;
         .row {
+            margin-left: 20px;
             .item {
                 h3 {
                     font-size: 20px;
                     font-weight: 600;
-                    color: rgb(44, 42, 42);
+                    color: #fff;
+                    padding-top: 20px;
                 }
 
                 ul {
                     li {
                         list-style: none;
                         margin-left: -27px;
-                        color: rgb(44, 42, 42);
+                        color: #fff;
                         font-size: 14px;
                         font-weight: 300;
                     }
                 }
 
                 p {
-                    color: rgb(44, 42, 42);
+                    color: #fff;
                     font-size: 14px;
                     font-weight: 400;
+                    // margin-bottom: 20px;
                 }
 
                 a {
                     text-decoration: none;
-                    color: #d93025;
+                    color: orange;
                     font-size: 14px;
                     font-weight: 400;
-
-
+                    display: inline-block;
+                    margin-bottom: 30px;
                 }
             }
         }
