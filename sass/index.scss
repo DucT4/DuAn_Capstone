@@ -85,11 +85,11 @@
 }
 .header
 {
+    background-color: #000;
     .container
     {
         display: flex;
         justify-content: space-between;
-        background-color: #000;
         height: 50px;
         .logo
         {
@@ -112,6 +112,8 @@
                     top: 14px;
                 text-decoration: none;
                 color: #F7F7F7;
+                font-weight: 300;
+                font-size: 16px;
             }
             .register
             {
@@ -122,6 +124,8 @@
                     top: 15px;
                 text-decoration: none;
                 color: #F7F7F7;
+                font-weight: 300;
+                font-size: 16px;
             }
             .cart
             {
@@ -134,8 +138,56 @@
         }
     }
 }
-
-
+.menu-shop 
+{
+   .container
+   {
+    background-color: #FFFFFF;
+    height: 50px;
+    .menu-kind 
+    {
+        a{
+        text-decoration: none;
+        color: #000000;
+        font-weight: 400;
+        font-size: 20px;
+        margin: 0 15px;
+        }
+    }
+   }
+}
+.products
+{
+    background: #F5F5F5;
+    .products-title
+    {
+        color: #000000;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 48px;
+        text-align: center;
+    }
+    .container
+    {
+        .row
+        {   
+            .card
+            {
+                margin-top: 10%;
+                box-shadow: 6px 6px 12px #e2ebfc, -6px -6px 12px #fff;
+                .card-body
+                {
+                    .name-price
+                    {
+                        color:#000000;
+                        font-size: 24px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    } 
+}
 
 footer {
     position: fixed;
@@ -184,5 +236,19 @@ footer {
                 }
             }
         }
+    }
+}
+
+
+
+@keyframes fadeDown {
+    0%{
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateY(0px);
+        opacity: 1;
     }
 }

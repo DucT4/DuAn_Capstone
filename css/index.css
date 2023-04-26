@@ -67,6 +67,87 @@
   background-color: rgb(225, 118, 52);
 }
 
+.header {
+  background-color: #000;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+}
+.header .container .logo {
+  position: absolute;
+  width: 116px;
+  height: 32px;
+  left: 24px;
+  top: 10px;
+}
+.header .container .menu-header {
+  display: flex;
+  justify-content: space-between;
+}
+.header .container .menu-header .login {
+  position: absolute;
+  width: 91px;
+  height: 32px;
+  left: 1300px;
+  top: 14px;
+  text-decoration: none;
+  color: #F7F7F7;
+  font-weight: 300;
+  font-size: 16px;
+}
+.header .container .menu-header .register {
+  position: absolute;
+  width: 90px;
+  height: 32px;
+  left: 1390px;
+  top: 15px;
+  text-decoration: none;
+  color: #F7F7F7;
+  font-weight: 300;
+  font-size: 16px;
+}
+.header .container .menu-header .cart {
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  left: 1200px;
+  top: 10px;
+}
+
+.menu-shop .container {
+  background-color: #FFFFFF;
+  height: 50px;
+}
+.menu-shop .container .menu-kind a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0 15px;
+}
+
+.products {
+  background: #F5F5F5;
+}
+.products .products-title {
+  color: #000000;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+}
+.products .container .row .card {
+  margin-top: 10%;
+  box-shadow: 6px 6px 12px #e2ebfc, -6px -6px 12px #fff;
+}
+.products .container .row .card .card-body .name-price {
+  color: #000000;
+  font-size: 24px;
+  text-align: center;
+}
+
 footer {
   position: fixed;
   bottom: 0;
@@ -106,4 +187,15 @@ footer .background .row .item a {
   font-weight: 400;
   display: inline-block;
   margin-bottom: 30px;
+}
+
+@keyframes fadeDown {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
