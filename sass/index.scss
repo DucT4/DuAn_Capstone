@@ -159,37 +159,153 @@
 .products
 {
     background: #F5F5F5;
-    .products-title
+    padding-bottom: 10%;
+    .tab
     {
-        color: #000000;
-        font-weight: 400;
-        font-size: 40px;
-        line-height: 48px;
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
         text-align: center;
-    }
-    .container
-    {
-        .row
-        {   
-            .card
+        button
+        {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            &:hover
             {
-                margin-top: 10%;
-                box-shadow: 6px 6px 12px #e2ebfc, -6px -6px 12px #fff;
-                .card-body
-                {
-                    .name-price
-                    {
-                        color:#000000;
-                        font-size: 24px;
-                        text-align: center;
-                    }
-                }
+                background-color: #ddd;
+            }
+            &.active
+            {
+                background-color: #ccc;
             }
         }
-    } 
+    }
+
+    .tabcontent 
+        {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+            .products-title
+            {
+                color: #000000;
+                font-weight: 400;
+                font-size: 40px;
+                line-height: 48px;
+                text-align: center;
+            }
+            .container
+            {
+                .row
+                {   
+                    .col-2
+                    {
+                        max-width: 100%;
+                        .card
+                        {
+                            margin-top: 10%;
+                            box-shadow: 6px 6px 12px #e2ebfc, -6px -6px 12px #fff;
+                            width: 100%;
+                            .pic
+                            {
+                                img
+                                {
+                                    width: 100%;
+                                }
+                                
+                            }
+                            .card-body
+                            {
+                                .name
+                                {
+                                    color:#000000;
+                                    font-size: 24px;
+                                    text-align: center;
+                                    min-height: 108px;
+                                }
+                                .price
+                                {
+                                    color:#000000;
+                                    font-size: 24px;
+                                    text-align: center;
+                                }
+                                .btn
+                                {
+                                    .custom-btn {
+                                        width: 130px;
+                                        height: 40px;
+                                        color: #fff;
+                                        border-radius: 5px;
+                                        padding: 10px 25px;
+                                        font-family: 'Lato', sans-serif;
+                                        font-weight: 500;
+                                        background: transparent;
+                                        cursor: pointer;
+                                        transition: all 0.3s ease;
+                                        position: relative;
+                                        display: inline-block;
+                                         box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+                                         7px 7px 20px 0px rgba(0,0,0,.1),
+                                         4px 4px 5px 0px rgba(0,0,0,.1);
+                                        outline: none;
+                                      }
+                                      .btn-buy {
+                                        width: 130px;
+                                        height: 40px;
+                                        line-height: 42px;
+                                        padding: 0;
+                                        border: none;
+                                        background: rgb(255,27,0);
+                                      background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
+                                      }
+                                      .btn-buy:hover {
+                                        color: #f0094a;
+                                        background: transparent;
+                                         box-shadow:none;
+                                      }
+                                      .btn-buy:before,
+                                      .btn-buy:after{
+                                        content:'';
+                                        position:absolute;
+                                        top:0;
+                                        right:0;
+                                        height:2px;
+                                        width:0;
+                                        background: #f0094a;
+                                        box-shadow:
+                                         -1px -1px 5px 0px #fff,
+                                         7px 7px 20px 0px #0003,
+                                         4px 4px 5px 0px #0002;
+                                        transition:400ms ease all;
+                                      }
+                                      .btn-buy:after{
+                                        right:inherit;
+                                        top:inherit;
+                                        left:0;
+                                        bottom:0;
+                                      }
+                                      .btn-buy:hover:before,
+                                      .btn-buy:hover:after{
+                                        width:100%;
+                                        transition:800ms ease all;
+                                      }
+                                }
+                            }
+                        }
+                    }
+                  
+                }
+            } 
+        }
 }
 
-footer {
+.footer {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -239,6 +355,52 @@ footer {
     }
 }
 
+.ft-index {
+    background-size: cover;
+    width: 100%;
+
+    .background {
+        background-color: rgb(34, 35, 33);
+        width: 100%;
+        .row {
+            margin-left: 20px;
+            .item {
+                h3 {
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: #fff;
+                    padding-top: 20px;
+                }
+
+                ul {
+                    li {
+                        list-style: none;
+                        margin-left: -27px;
+                        color: #fff;
+                        font-size: 14px;
+                        font-weight: 300;
+                    }
+                }
+
+                p {
+                    color: #fff;
+                    font-size: 14px;
+                    font-weight: 400;
+                    // margin-bottom: 20px;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: orange;
+                    font-size: 14px;
+                    font-weight: 400;
+                    display: inline-block;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
 
 
 @keyframes fadeDown {
