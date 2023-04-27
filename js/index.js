@@ -23,7 +23,7 @@
                             <p class="name">${giay.name}</p>
                             <p class="price">${giay.price}$</p>
                             <div class="btn">
-                                <button class="custom-btn btn-buy">Buy now</button>
+                                <a   href="./detail.html?productid=1"class="custom-btn btn-buy">Buy now</a>
                             </div>
                         </div>
                     </div>
@@ -67,7 +67,7 @@
                             <p class="name">${giay.name}</p>
                             <p class="price">${giay.price}$</p>
                             <div class="btn">
-                                <button class="custom-btn btn-buy">Buy now</button>
+                                <a  href="./detail.html?productid=2" class="custom-btn btn-buy">Buy now</a>
                             </div>
                         </div>
                     </div>
@@ -111,7 +111,7 @@
                             <p class="name">${giay.name}</p>
                             <p class="price">${giay.price}$</p>
                             <div class="btn">
-                                <button class="custom-btn btn-buy">Buy now</button>
+                                <a  href="./detail.html?productid=3" class="custom-btn btn-buy">Buy now</a>
                             </div>
                         </div>
                     </div>

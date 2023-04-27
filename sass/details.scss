@@ -1,0 +1,134 @@
+.header {
+    background-color: #000;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+
+        .logo {
+            position: absolute;
+            width: 116px;
+            height: 32px;
+            left: 24px;
+            top: 10px;
+        }
+
+        .menu-header {
+            display: flex;
+            justify-content: space-between;
+
+            .login {
+                position: absolute;
+                width: 91px;
+                height: 32px;
+                left: 1300px;
+                top: 14px;
+                text-decoration: none;
+                color: #F7F7F7;
+                font-weight: 300;
+                font-size: 16px;
+            }
+
+            .register {
+                position: absolute;
+                width: 90px;
+                height: 32px;
+                left: 1390px;
+                top: 15px;
+                text-decoration: none;
+                color: #F7F7F7;
+                font-weight: 300;
+                font-size: 16px;
+            }
+
+            .cart {
+                position: absolute;
+                width: 60px;
+                height: 30px;
+                left: 1200px;
+                top: 10px;
+            }
+        }
+    }
+}
+
+.container {
+    .row {
+        .img {
+            img {
+                width: 300px;
+                margin-top: 50px;
+                margin-left: 30px;
+            }
+        }
+
+        .explain {
+            margin-top: 50px;
+            .product_name {}
+
+            .nd {}
+
+            .Avai {}
+            }
+        }
+    }
+}
+
+
+
+
+.footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    width: 100%;
+
+    .background {
+        position: absolute;
+        top: 500px;
+        left: 0;
+        background-color: rgb(34, 35, 33);
+        width: 100%;
+
+        .row {
+            margin-left: 20px;
+
+            .item {
+                h3 {
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: #fff;
+                    padding-top: 20px;
+                }
+
+                ul {
+                    li {
+                        list-style: none;
+                        margin-left: -27px;
+                        color: #fff;
+                        font-size: 14px;
+                        font-weight: 300;
+                    }
+                }
+
+                p {
+                    color: #fff;
+                    font-size: 14px;
+                    font-weight: 400;
+                    // margin-bottom: 20px;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: orange;
+                    font-size: 14px;
+                    font-weight: 400;
+                    display: inline-block;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
