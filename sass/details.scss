@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
 .header {
     background-color: #000;
 
@@ -65,18 +72,97 @@
 
         .explain {
             margin-top: 50px;
-            .product_name {}
 
-            .nd {}
-
-            .Avai {}
+            .product_name {
+                color: rgb(80, 76, 76);
+                font-size: 30px;
+                font-weight: 600px;
+                line-height: 1.1;
             }
+
+            .nd {
+                color: rgb(10, 9, 9);
+                font-size: 18px;
+                font-weight: 400px;
+            }
+
+            .Avai {
+                margin: 10px 0;
+                color: rgb(235, 122, 17);
+                font-size: 30px;
+                font-weight: 600px;
+                line-height: 1.1;
+            }
+
+            .size {
+                button {
+                    padding: 5px 10px;
+                    margin-right: 10px;
+                    background-color: rgb(219, 223, 224);
+                    border-radius: 3px;
+
+                    &:first-child {
+                        margin-left: 20px;
+                    }
+
+                    &:hover {
+                        color: rgb(14, 13, 12);
+                        background-color: orange;
+                        transition: all .5s;
+                    }
+                }
+            }
+
+            .price {
+                font-size: 25.5px;
+                font-weight: 400;
+                color: #000;
+                margin: 10px 0;
+
+                span {
+                    margin-right: 10px;
+                }
+            }
+
+            .quantity-field {
+                margin-left: 30px;
+                display: flex;
+
+                button {
+                    padding: 7px;
+                    font-size: 10px;
+                    width: 35px;
+                    height: auto;
+                    border-radius: 4px;
+                }
+
+                .number {
+                    text-align: center;
+                    margin: 0 10px;
+                    margin-top: 4px;
+                }
+            }
+
+            .add {
+                button {
+                    padding: 5px 15px;
+                    background-color: rgb(215, 113, 22);
+                    color: #000;
+                    margin-top: 20px;
+                    margin-left: 160px;
+
+                    &:hover {
+                        background-color: rgb(10, 10, 10);
+                        color: rgb(226, 110, 7);
+                        transition: all .5s;
+                    }
+                }
+            }
+
+
         }
     }
 }
-
-
-
 
 .footer {
     position: relative;
