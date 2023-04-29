@@ -33,17 +33,49 @@
         <div class="container">
             <nav class="menu-kind">
                 <a href="index.html">Home</a>
-                <a href="#">Man</a>
+                <!-- <a href="#">Man</a>
                 <a href="#">Woman</a>
                 <a href="#">Kid</a>
-                <a href="#">Sport</a>
+                <a href="#">Sport</a> -->
             </nav>
         </div>
     </section>
     <section class="carousel">
-        <div>
-            
+      <div id="carouselExampleDark" class="carousel carousel-dark slide max-vh-100">
+        <div class="carousel-indicators z-3">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="btn-indicator active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button class="btn-indicator" type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <!-- <button class="btn-indicator" type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+            aria-label="Slide 3"></button> -->
         </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="/img/nike-athletics.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="/img/adidasNMD.png" class="d-block w-100" alt="...">
+          </div>
+          <!-- <div class="carousel-item z-3">
+            <img src="/images/mountains-1.jpg" class="d-block w-100" alt="...">
+            <div
+              class="carousel-caption  d-none d-md-flex flex-column justify-content-center align-items-center h-100 text-white z-3">
+              <img class="avatar rounded-circle" src="/images/03-3.jpg" />
+              <h5 class="display-4">Our goals. Our mission.</h5>
+              <p class="fs-5">How we help other companies to grow.</p>
+            </div>
+          </div> -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </section>
     <!-- <section class="products">
         <h1 class="products-title">Products Feature</h1>

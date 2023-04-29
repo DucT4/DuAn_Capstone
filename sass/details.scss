@@ -59,7 +59,22 @@
         }
     }
 }
+.menu-shop {
+    .container {
+        background-color: #FFFFFF;
+        height: 50px;
 
+        .menu-kind {
+            a {
+                text-decoration: none;
+                color: #000000;
+                font-weight: 400;
+                font-size: 20px;
+                margin: 0 15px;
+            }
+        }
+    }
+}
 .container {
     .row {
         .img {

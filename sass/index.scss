@@ -156,7 +156,27 @@
         }
     }
 }
+.carousel {
 
+    height: 100%;
+
+    .carouselExampleDark 
+    {
+        max-height: 740px;
+        .carousel-indicators {
+
+        }
+
+        .carousel-inner {
+            .carousel-item {
+                img {
+                    height: 50%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
 .products {
     background: #F5F5F5;
     padding-bottom: 10%;
