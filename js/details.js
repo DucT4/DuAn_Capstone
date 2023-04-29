@@ -58,4 +58,39 @@ window.onload = function () {
 
 
 
+(function (){
+  let promise = axios({
+    url:'https://shop.cyberlearn.vn/api/Product',
+    method:'GET'
+  }).then(function(res){
+    console.log('arrGiay',res.data)
+    let arrGiay = res.data.content;
+    let content ='';
+    for(let index=0; index<arrGiay.length; index++){
+         let giay= arrGiay[index];
+         content += `
+         <div class="col-2">
+         <div class="card">
+             <div class="pic">
+               <img src="${giay.image}" alt="...."/>
+             </div>
+             <div class="card-body">
+                 <p class="name">${giay.name}</p>
+                 <p class="price">${giay.price}$</p>
+                 <div class="btn">
+                     <a   href="./detail.html?productid=${giay.id}"class="custom-btn btn-buy">Buy now</a>
+                 </div>
+             </div>
+             </div>
+             </div>
+        </div>   
+         
+         `;
+    }
+    document.querySelector('#list-giay').innerHTML = content;
+  })
+})();
+
+
+
 
