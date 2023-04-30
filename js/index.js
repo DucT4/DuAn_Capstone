@@ -14,7 +14,7 @@
             var giay = manggiay[index];
 
             content +=`
-            <div class="col-2">
+            <div class="col-3">
                     <div class="card">
                         <div class="pic">
                           <img src="${giay.image}" alt="...."/>
@@ -58,7 +58,7 @@
             var giay = manggiay[index];
 
             content +=`
-            <div class="col-2">
+            <div class="col-3">
                     <div class="card">
                         <div class="pic">
                           <img src="${giay.image}" alt="...."/>
@@ -102,7 +102,7 @@
             var giay = manggiay[index];
 
             content +=`
-            <div class="col-2">
+            <div class="col-3">
                     <div class="card">
                         <div class="pic">
                           <img src="${giay.image}" alt="...."/>

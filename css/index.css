@@ -177,29 +177,32 @@
   line-height: 48px;
   text-align: center;
 }
-.products .tabcontent .container .row .col-2 {
+.products .tabcontent .container .row .col-3 {
   max-width: 100%;
 }
-.products .tabcontent .container .row .col-2 .card {
+.products .tabcontent .container .row .col-3 .card {
   margin-top: 10%;
   box-shadow: 6px 6px 12px #e2ebfc, -6px -6px 12px #fff;
   width: 100%;
 }
-.products .tabcontent .container .row .col-2 .card .pic img {
+.products .tabcontent .container .row .col-3 .card .pic img {
   width: 100%;
 }
-.products .tabcontent .container .row .col-2 .card .card-body .name {
+.products .tabcontent .container .row .col-3 .card .card-body .name {
   color: #000000;
   font-size: 24px;
   text-align: center;
   min-height: 108px;
 }
-.products .tabcontent .container .row .col-2 .card .card-body .price {
+.products .tabcontent .container .row .col-3 .card .card-body .price {
   color: #000000;
   font-size: 24px;
   text-align: center;
 }
-.products .tabcontent .container .row .col-2 .card .card-body .btn .custom-btn {
+.products .tabcontent .container .row .col-3 .card .card-body .btn {
+  margin-left: 57px;
+}
+.products .tabcontent .container .row .col-3 .card .card-body .btn .custom-btn {
   width: 130px;
   height: 40px;
   color: #fff;
@@ -215,7 +218,7 @@
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
 }
-.products .tabcontent .container .row .col-2 .card .card-body .btn .btn-buy {
+.products .tabcontent .container .row .col-3 .card .card-body .btn .btn-buy {
   text-decoration: none;
   width: 130px;
   height: 40px;
@@ -225,13 +228,13 @@
   background: rgb(255, 27, 0);
   background: linear-gradient(0deg, rgb(255, 27, 0) 0%, rgb(251, 75, 2) 100%);
 }
-.products .tabcontent .container .row .col-2 .card .card-body .btn .btn-buy:hover {
+.products .tabcontent .container .row .col-3 .card .card-body .btn .btn-buy:hover {
   color: #f0094a;
   background: transparent;
   box-shadow: none;
 }
-.products .tabcontent .container .row .col-2 .card .card-body .btn .btn-buy:before,
-.products .tabcontent .container .row .col-2 .card .card-body .btn .btn-buy:after {
+.products .tabcontent .container .row .col-3 .card .card-body .btn .btn-buy:before,
+.products .tabcontent .container .row .col-3 .card .card-body .btn .btn-buy:after {
   content: "";
   position: absolute;
   top: 0;
@@ -242,14 +245,14 @@
   box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.1333333333);
   transition: 400ms ease all;
 }
-.products .tabcontent .container .row .col-2 .card .card-body .btn .btn-buy:after {
+.products .tabcontent .container .row .col-3 .card .card-body .btn .btn-buy:after {
   right: inherit;
   top: inherit;
   left: 0;
   bottom: 0;
 }
-.products .tabcontent .container .row .col-2 .card .card-body .btn .btn-buy:hover:before,
-.products .tabcontent .container .row .col-2 .card .card-body .btn .btn-buy:hover:after {
+.products .tabcontent .container .row .col-3 .card .card-body .btn .btn-buy:hover:before,
+.products .tabcontent .container .row .col-3 .card .card-body .btn .btn-buy:hover:after {
   width: 100%;
   transition: 800ms ease all;
 }
