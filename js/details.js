@@ -13,6 +13,8 @@ window.onload = function () {
             // console.log(res.data);
             var content = '';
             var giay = res.data.content;
+            var arrSize = [giay.size];
+            console.log('arrS',arrSize);
             console.log('giay',giay);
             // for (var index = 0; index < arrGiay.length; index++) {
             //     var giay = arrGiay[index];
@@ -26,11 +28,12 @@ window.onload = function () {
                     <span class="nd"> ${giay.description}  </span>
                     <h3 class="Avai">Avaiable sLoremize</h3>
                     <div class="size">
-                         <button>${giay.size,1}</button>
-                          <button>${giay.size,2}</button>
-                         <button>${giay.size,3}</button>
-                         <button>${giay.size,4}</button>
-                         <button>${giay.size,5}</button>
+                         <button>${giay.size[1]}</button>
+                          <button>${giay.size[2]}</button>
+                         <button>${giay.size[3]}</button>
+                         <button>${giay.size[4]}</button>
+                         <button>${giay.size[5]}</button>
+
                     </div>
                     <div class="price"><span> Price:</span>  ${giay.price}$ </div>
                     <div class="quantity-field">
