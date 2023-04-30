@@ -1,6 +1,6 @@
 function kiemTraRong(value, name){
   if(value.trim()===''){
-    document.querySelector(`#error-required-${name}`).innerHTML = ` <i class="fa fa-exclamation-circle"></i>
+    document.querySelector(`#error-required-${name}`).innerHTML = `<i class="fa fa-exclamation-triangle"></i>
     must not be left blank ${name} !!`;
     return false;
   }
@@ -12,7 +12,7 @@ function kiemTraRong(value, name){
         document.querySelector(`#error-regex-${name}`).innerHTML='';
         return true;
      }
-     document.querySelector(`#error-regex-${name}`).innerHTML=` <i class="fa fa-exclamation-circle"></i>
+     document.querySelector(`#error-regex-${name}`).innerHTML=`<i class="fa fa-exclamation-triangle"></i>
      Please fill out the form correctly!!`;
      return false;
      
@@ -23,7 +23,7 @@ function kiemTraPassWord(value,name){
         document.querySelector(`#error-regex-${name}`).innerHTML='';
         return true;
     }
-    document.querySelector(`#error-regex-${name}`).innerHTML=` <i class="fa fa-exclamation-circle"></i> Special characters,capital characters,numbers!!`;
+    document.querySelector(`#error-regex-${name}`).innerHTML=`<i class="fa fa-exclamation-triangle"></i>  <i>Uppercase, numeric,  special characters!!</i>`;
      return false;
 }
  function kiemTraKiTu(value,name){
@@ -33,7 +33,7 @@ function kiemTraPassWord(value,name){
         return true;
     }
     document.querySelector(`#error-regex-${name}`).innerHTML=`
-    <i class="fa fa-exclamation-circle"></i> Name must not contain numbers!!`;
+   <i class="fa fa-exclamation-triangle"></i> Name must not contain numbers!!`;
  }
 
 

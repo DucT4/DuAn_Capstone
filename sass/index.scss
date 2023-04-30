@@ -5,85 +5,85 @@
     font-family: 'Inter', sans-serif;
 }
 
-.thongtin {
-    text-align: center;
-    position: relative;
+// .thongtin {
+//     text-align: center;
+//     position: relative;
 
-    h3 {
-        font-size: 25.5px;
-        font-weight: 700;
-        color: orange;
-        text-align: center;
-    }
+//     h3 {
+//         font-size: 25.5px;
+//         font-weight: 700;
+//         color: orange;
+//         text-align: center;
+//     }
 
-    .register {
-        display: inline-block;
+//     .register {
+//         display: inline-block;
 
-        .row {
-            .item {
-                position: relative;
-                margin-bottom: 20px;
+//         .row {
+//             .item {
+//                 position: relative;
+//                 margin-bottom: 20px;
 
-                label {
-                    margin-top: 10px;
-                    display: flex;
-                    text-align: left;
-                    font-size: 16px;
-                    font-weight: 400;
-                    margin-left: 5px;
-                }
+//                 label {
+//                     margin-top: 10px;
+//                     display: flex;
+//                     text-align: left;
+//                     font-size: 16px;
+//                     font-weight: 400;
+//                     margin-left: 5px;
+//                 }
 
-                input {
-                    padding-right: 120px;
-                }
+//                 input {
+//                     padding-right: 120px;
+//                 }
 
-                .form-check-input {
-                    padding-right: 5px;
-                }
+//                 .form-check-input {
+//                     padding-right: 5px;
+//                 }
 
-                i {
-                    color: #d93025;
-                }
+//                 i {
+//                     color: #d93025;
+//                 }
 
-                p {
-                    font-size: 13px;
-                    text-align: left;
-                    color: #d93025;
-                    position: absolute;
+//                 p {
+//                     font-size: 13px;
+//                     text-align: left;
+//                     color: #d93025;
+//                     position: absolute;
 
 
-                }
-            }
+//                 }
+//             }
 
-            .item3 {
-                display: flex;
-                margin-top: 25px;
+//             .item3 {
+//                 display: flex;
+//                 margin-top: 25px;
 
-                .form-check {
-                    margin-left: 15px;
+//                 .form-check {
+//                     margin-left: 15px;
 
-                    .form-check-input {
-                        margin-top: 13px;
-                        margin-right: 4px;
-                    }
-                }
-            }
-        }
-    }
+//                     .form-check-input {
+//                         margin-top: 13px;
+//                         margin-right: 4px;
+//                     }
+//                 }
+//             }
+//         }
+//     }
 
-    button {
-        display: block;
-        position: absolute;
-        top: 300px;
-        right: 374px;
-        margin-top: 30px;
-        color: rgb(44, 43, 41);
-        padding-left: 25px;
-        padding-right: 25px;
-        background-color: rgb(225, 118, 52);
+//     button {
+//         display: block;
+//         position: absolute;
+//         top: 300px;
+//         right: 374px;
+//         margin-top: 30px;
+//         color: rgb(44, 43, 41);
+//         padding-left: 25px;
+//         padding-right: 25px;
+//         background-color: rgb(225, 118, 52);
 
-    }
-}
+//     }
+// }
 
 .header {
     background-color: #000;
@@ -156,16 +156,15 @@
         }
     }
 }
+
 .carousel {
 
     height: 100%;
 
-    .carouselExampleDark 
-    {
+    .carouselExampleDark {
         max-height: 740px;
-        .carousel-indicators {
 
-        }
+        .carousel-indicators {}
 
         .carousel-inner {
             .carousel-item {
@@ -177,6 +176,7 @@
         }
     }
 }
+
 .products {
     background: #F5F5F5;
     padding-bottom: 10%;
@@ -253,6 +253,7 @@
 
                             .btn {
                                 margin-left: 57px;
+
                                 .custom-btn {
                                     width: 130px;
                                     height: 40px;
@@ -325,27 +326,27 @@
             }
         }
     }
-    .trademark{
+
+    .trademark {
         display: none;
     }
 }
 
 .footer {
-    position: relative;
-    bottom: 0;
-    left: 0;
-    background-size: cover;
-    width: 100%;
+
 
     .background {
         position: absolute;
-        top:500px;
+        bottom: -195px;
         left: 0;
-        background-color: rgb(34, 35, 33);
+        background: #000;
+        background-size: cover;
+        background-position: bottom left;
         width: 100%;
 
         .row {
             margin-left: 20px;
+            margin-right: 1px;
 
             .item {
                 h3 {
@@ -392,10 +393,13 @@
 
     .background {
         position: absolute;
-        top:500px;
+        bottom: -195px;
         left: 0;
-        background-color: rgb(34, 35, 33);
+        background: #000;
+        background-size: cover;
+        background-position: bottom left;
         width: 100%;
+
 
         .row {
             margin-left: 20px;

@@ -10,7 +10,7 @@ document.querySelector('#btnSubmit').onclick = function (event) {
    newThongTin.phone = document.querySelector('#phone').value;
    newThongTin.gender = document.querySelector('#gridCheck').checked;
    newThongTin.confirmPassword = document.querySelector('#confirmPass').value;
-   console.log('newThongtin', newThongTin)
+   // console.log('newThongtin', newThongTin)
 
 
    if (newThongTin.password != newThongTin.confirmPassword) {
@@ -25,10 +25,13 @@ document.querySelector('#btnSubmit').onclick = function (event) {
 
    let valid = true;
 
-   valid = kiemTraRong(newThongTin.phone, 'phone') & kiemTraEmail(newThongTin.email, 'email') & kiemTraPassWord(newThongTin.password, 'password') & kiemTraKiTu(newThongTin.name, 'name') & kiemTraPassWord(newThongTin.confirmPassword, 'confirmPass');
+   valid = kiemTraRong(newThongTin.phone, 'phone') & kiemTraEmail(newThongTin.email, 'email') & kiemTraPassWord(newThongTin.password, 'password') & kiemTraKiTu(newThongTin.name, 'name') & kiemTraRong(newThongTin.confirmPassword, 'confirmPass');
    if (!valid) {
       return;
    }
+
+
+
    if (newThongTin.gender === true) {
       newThongTin.gender = 'Male'
    } else {
@@ -67,7 +70,7 @@ function getStorage() {
       let stringArrTT = localStorage.getItem('arrThongTin');
       // chuyễn đổi stringArrTT thành dạng object
       arrThongTin = JSON.parse(stringArrTT);
-      console.log('arrTt', arrThongTin);
+      // console.log('arrTt', arrThongTin);
    }
 }
 getStorage();
