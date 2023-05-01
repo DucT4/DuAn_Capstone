@@ -65,18 +65,20 @@ window.onload = function () {
           let product = resp.data.content.relatedProducts;
           let output = ``;
           product.forEach((item) => {
-            output += `<div class="col-4">
-            <div class="card">
-              <div class="pic">
-                <img src="${item.image}" alt="...." />
-              </div>
-              <div class="card-body">
-                <p class="name">${item.name}</p>
-                <p class="price">$${item.price}</p>
-                <div class="btn">
-                  <a href="./detail.html?productid=${item.id}" class="custom-btn btn-buy" >Buy now</a>
+            output += `<div class="col-12 col-lg-4">
+            <div class="container">
+              <div class="card">
+                <div class="pic">
+                  <img src="${item.image}" alt="...."/>
                 </div>
-              </div>
+                <div class="card-body">
+                    <p class="name">${item.name}</p>
+                    <p class="price">$${item.price}</p>
+                    <div class="btn">
+                      <a href="./detail.html?productid=${item.id}" class="custom-btn btn-buy">Buy now</a>
+                    </div>
+                </div>
+            </div>
             </div>
           </div>`;
           });

@@ -14,21 +14,22 @@
             var giay = manggiay[index];
 
             content +=`
-            <div class="col-3">
-                    <div class="card">
-                        <div class="pic">
-                          <img src="${giay.image}" alt="...."/>
-                        </div>
-                        <div class="card-body">
-                            <p class="name">${giay.name}</p>
-                            <p class="price">${giay.price}$</p>
-                            <div class="btn">
-                                <a   href="./detail.html?productid=${giay.id}"class="custom-btn btn-buy">Buy now</a>
-                            </div>
-                        </div>
+            <div class="col-12 col-lg-4">
+            <div class="container">
+              <div class="card">
+                <div class="pic">
+                  <img src="${giay.image}" alt="...."/>
+                </div>
+                <div class="card-body">
+                    <p class="name">${giay.name}</p>
+                    <p class="price">$${giay.price}</p>
+                    <div class="btn">
+                      <a href="./detail.html?productid=${giay.id}" class="custom-btn btn-buy">Buy now</a>
                     </div>
                 </div>
-            </div>`
+            </div>
+            </div>
+          </div>`
         }
         document.querySelector('#list-giay').innerHTML = content;
 
@@ -58,21 +59,22 @@
             var giay = manggiay[index];
 
             content +=`
-            <div class="col-3">
-                    <div class="card">
-                        <div class="pic">
-                          <img src="${giay.image}" alt="...."/>
-                        </div>
-                        <div class="card-body">
-                            <p class="name">${giay.name}</p>
-                            <p class="price">${giay.price}$</p>
-                            <div class="btn">
-                                <a  href="./detail.html?productid=${giay.id}" class="custom-btn btn-buy">Buy now</a>
-                            </div>
-                        </div>
+            <div class="col-12 col-lg-4">
+            <div class="container">
+              <div class="card">
+                <div class="pic">
+                  <img src="${giay.image}" alt="...."/>
+                </div>
+                <div class="card-body">
+                    <p class="name">${giay.name}</p>
+                    <p class="price">$${giay.price}</p>
+                    <div class="btn">
+                      <a href="./detail.html?productid=${giay.id}" class="custom-btn btn-buy">Buy now</a>
                     </div>
                 </div>
-            </div>`
+            </div>
+            </div>
+          </div>`
         }
         document.querySelector('#list-giay-adidas').innerHTML = content;
 
@@ -102,21 +104,22 @@
             var giay = manggiay[index];
 
             content +=`
-            <div class="col-3">
-                    <div class="card">
-                        <div class="pic">
-                          <img src="${giay.image}" alt="...."/>
-                        </div>
-                        <div class="card-body">
-                            <p class="name">${giay.name}</p>
-                            <p class="price">${giay.price}$</p>
-                            <div class="btn">
-                                <a  href="./detail.html?productid=${giay.id}" class="custom-btn btn-buy">Buy now</a>
-                            </div>
-                        </div>
+            <div class="col-12 col-lg-4">
+            <div class="container">
+              <div class="card">
+                <div class="pic">
+                  <img src="${giay.image}" alt="...."/>
+                </div>
+                <div class="card-body">
+                    <p class="name">${giay.name}</p>
+                    <p class="price">$${giay.price}</p>
+                    <div class="btn">
+                      <a href="./detail.html?productid=${giay.id}" class="custom-btn btn-buy">Buy now</a>
                     </div>
                 </div>
-            </div>`
+            </div>
+            </div>
+          </div>`
         }
         document.querySelector('#list-giay-nike').innerHTML = content;
 
@@ -144,21 +147,22 @@
             var giay = manggiay[index];
 
             content +=`
-            <div class="col-3">
-                    <div class="card">
-                        <div class="pic">
-                          <img src="${giay.image}" alt="...."/>
-                        </div>
-                        <div class="card-body">
-                            <p class="name">${giay.name}</p>
-                            <p class="price">${giay.price}$</p>
-                            <div class="btn">
-                                <a  href="./detail.html?productid=${giay.id}" class="custom-btn btn-buy">Buy now</a>
-                            </div>
-                        </div>
+            <div class="col-12 col-lg-4">
+            <div class="container">
+              <div class="card">
+                <div class="pic">
+                  <img src="${giay.image}" alt="...."/>
+                </div>
+                <div class="card-body">
+                    <p class="name">${giay.name}</p>
+                    <p class="price">$${giay.price}</p>
+                    <div class="btn">
+                      <a href="./detail.html?productid=${giay.id}" class="custom-btn btn-buy">Buy now</a>
                     </div>
                 </div>
-            </div>`
+            </div>
+            </div>
+          </div>`
         }
         document.querySelector('#list-giay-vans').innerHTML = content;
 
