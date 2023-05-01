@@ -321,9 +321,8 @@ header {
     width: 650px;
 }
 
-
-
-@media (max-width:678px) {
+//---------responsive---------
+@media (max-width:768px) {
     body {
         min-height: 100vh;
 
