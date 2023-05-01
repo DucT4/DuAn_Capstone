@@ -128,6 +128,49 @@
 
 })();
 
+(function ()
+{
+    var promise = axios ({
+        url:'https://shop.cyberlearn.vn/api/Product/getProductByCategory?categoryId=VANS_CONVERSE',
+        method: 'GET',
+    }).then(function(res){
+
+        console.log(res.data);
+        var manggiay = res.data.content;
+        var content ='';
+        for(var index = 0; index < manggiay.length;index++)
+        {
+            //Mỗi lần duyệt lấy ra 1 object phim
+            var giay = manggiay[index];
+
+            content +=`
+            <div class="col-3">
+                    <div class="card">
+                        <div class="pic">
+                          <img src="${giay.image}" alt="...."/>
+                        </div>
+                        <div class="card-body">
+                            <p class="name">${giay.name}</p>
+                            <p class="price">${giay.price}$</p>
+                            <div class="btn">
+                                <a  href="./detail.html?productid=${giay.id}" class="custom-btn btn-buy">Buy now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>`
+        }
+        document.querySelector('#list-giay-vans').innerHTML = content;
+
+    }).catch(function(err){
+
+        console.log(err.response.data)
+
+    })
+
+})();
+
+
 function openCity(evt, cityName) {
     // Declare all variables
     var i, tabcontent, tablinks;
