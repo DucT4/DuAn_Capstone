@@ -74,7 +74,7 @@ window.onload = function () {
                 <p class="name">${item.name}</p>
                 <p class="price">$${item.price}</p>
                 <div class="btn">
-                  <a class="custom-btn btn-buy" >Buy now</a>
+                  <a href="./detail.html?productid=${item.id}" class="custom-btn btn-buy" >Buy now</a>
                 </div>
               </div>
             </div>

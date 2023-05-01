@@ -17,31 +17,47 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="container">
-      <img class="logo" src="../img/image 3.png">
-      <nav class="menu-header">
-        <div class="cart">
-          <img src="../img/logo-cart.png">
+  <header class="header-index">
+    <nav class="navbar navbar-expand-lg p-3">
+      <div class="container justify-between">
+        <a class="navbar-brand fs-4" href="#">
+          <img src="/img/image 3.png" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa icon-expand fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#">
+                <img src="/img/logo-cart.png" alt="shopping-cart">
+              </a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#">Product</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="./registerUp.html">Register</a>
+            </li>
+          </ul>
         </div>
-        <a class="login" href="#">Login</a>
-        <a class="register" href="./registerUp.html">Register</a>
-      </nav>
-    </div>
+
+      </div>
+    </nav>
   </header>
 
-  <section class="menu-shop">
+  <section class="carousel">
     <div class="container">
-        <nav class="menu-kind">
-            <a href="index.html">Home</a>
-            <!-- <a href="#">Man</a>
-            <a href="#">Woman</a>
-            <a href="#">Kid</a>
-            <a href="#">Sport</a> -->
-        </nav>
+      <div class="link">
+        <a href="#" class="active">Home</a>
+        <a href="#">Men</a>
+        <a href="#">Woman</a>
+        <a href="#">Kid</a>
+        <a href="#">Sport</a>
+      </div>
     </div>
-</section>
-
+  </section>
   <div class="container">
     <div id="product_datails">
       <div class="row">

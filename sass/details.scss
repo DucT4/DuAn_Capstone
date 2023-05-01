@@ -5,75 +5,79 @@
     font-family: 'Inter', sans-serif;
 }
 
-.header {
+.header-index {
     background-color: #000;
-
-    .container {
-        display: flex;
-        justify-content: space-between;
-        height: 50px;
-
-        .logo {
-            position: absolute;
-            width: 116px;
-            height: 32px;
-            left: 24px;
-            top: 10px;
-        }
-
-        .menu-header {
-            display: flex;
-            justify-content: space-between;
-
-            .login {
-                position: absolute;
-                width: 91px;
-                height: 32px;
-                left: 1300px;
-                top: 14px;
-                text-decoration: none;
-                color: #F7F7F7;
-                font-weight: 300;
-                font-size: 16px;
+    nav
+    {
+        .container
+        {
+            .navbar-brand
+            {
+                img
+                {
+                    width: 120px;
+                }
             }
-
-            .register {
-                position: absolute;
-                width: 90px;
-                height: 32px;
-                left: 1390px;
-                top: 15px;
-                text-decoration: none;
-                color: #F7F7F7;
-                font-weight: 300;
-                font-size: 16px;
+            .navbar-toggler
+            {
+                color: #fff;
             }
+            .collapse
+            {
+                flex-grow: 0;
+                .navbar-nav
+                {
+                    .nav-item
+                    {
+                        .nav-link
+                        {
+                            color: #fff;
+                            font-size: 16px;
+                            transition: all 1s;
+                            &:hover
+                            {
+                                transform: scale(1.2)
+                            }
 
-            .cart {
-                position: absolute;
-                width: 60px;
-                height: 30px;
-                left: 1200px;
-                top: 10px;
+                        }
+                    }
+                }
             }
         }
     }
 }
-
-.menu-shop {
-    .container {
-        background-color: #FFFFFF;
-        height: 50px;
-
-        .menu-kind {
-            a {
-                text-decoration: none;
-                color: #18da38;
-                font-weight: 400;
-                font-size: 20px;
-                margin: 0 15px;
-                //  text-decoration: none;
-                //  color:#000;
+.carousel
+{
+    background-color: #D7DBDD;
+    .container
+    {
+        padding: 15px;
+        a
+        {
+            text-decoration: none;
+            color: #000;
+            margin-right: 30px;
+            font-size: 20px;
+            position: relative;
+            &::after
+            {
+                position: absolute;
+                width: 0%;
+                height: 3px;
+                bottom: -10px;
+                left: 0px;
+                content: "";
+                background-color: #000;
+                transition: all 1s
+            }
+            &:first-child:after
+            {
+                width: 100%;
+            }
+            &:hover::after
+            {
+                width: 100%;
+                transition: width 0.5s;
             }
         }
     }
