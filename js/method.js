@@ -34,6 +34,7 @@ function kiemTraPassWord(value,name){
     }
     document.querySelector(`#error-regex-${name}`).innerHTML=`
    <i class="fa fa-exclamation-triangle"></i> Name must not contain numbers!!`;
+   return false;
  }
 
 

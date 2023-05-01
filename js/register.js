@@ -10,7 +10,6 @@ document.querySelector('#btnSubmit').onclick = function (event) {
    newThongTin.phone = document.querySelector('#phone').value;
    newThongTin.gender = document.querySelector('#gridCheck').checked;
    newThongTin.confirmPassword = document.querySelector('#confirmPass').value;
-   // console.log('newThongtin', newThongTin)
 
 
    if (newThongTin.password != newThongTin.confirmPassword) {
@@ -44,7 +43,7 @@ document.querySelector('#btnSubmit').onclick = function (event) {
       "name": newThongTin.name,
       "gender": newThongTin.gender,
       "phone": newThongTin.phone
-   })
+   });
 
    promise.then(function (ketQua) {
       console.log('ketQua', ketQua.data.content);

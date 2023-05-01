@@ -460,7 +460,7 @@
 }
 
 /*responsive footer*/
-@media (max-width:1044px) {
+@media screen and (max-width:1044px) {
     .footer {
         .background {
             height: 37vh;
@@ -497,7 +497,7 @@
     }
 }
 
-@media (max-width:768px) {
+@media screen and (max-width:768px) {
     .footer {
         .background {
             height: 41vh;
@@ -541,7 +541,7 @@
 
 }
 
-@media (max-width:576px) {
+@media screen and (max-width:576px) {
     .footer {
         .background {
             height: 46vh;

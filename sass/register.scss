@@ -322,7 +322,7 @@ header {
 }
 
 //---------responsive---------
-@media (max-width:768px) {
+@media screen and  (max-width:768px) {
     body {
         min-height: 100vh;
 
@@ -475,7 +475,7 @@ header {
 
 }
 
-@media (min-width:576px) {
+@media screen and (max-width:576px) {
     body {
         header {
 
@@ -591,3 +591,5 @@ header {
         margin-top: -49px;
     }
 }
+
+
