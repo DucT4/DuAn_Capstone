@@ -55,44 +55,45 @@ window.onload = function () {
         })
 
     })();
+        getRelatedItem = () => {
+      let getRelated = axios({
+        url: `https://shop.cyberlearn.vn/api/Product/getbyid?id=${myParam}`,
+        method: "GET",
+      })
+        .then((resp) => {
+          let product = resp.data.content.relatedProducts;
+          let output = ``;
+          product.forEach((item) => {
+            output += `<div class="col-4">
+            <div class="card">
+              <div class="pic">
+                <img src="${item.image}" alt="...." />
+              </div>
+              <div class="card-body">
+                <p class="name">${item.name}</p>
+                <p class="price">$${item.price}</p>
+                <div class="btn">
+                  <a class="custom-btn btn-buy">Buy now</a>
+                </div>
+              </div>
+            </div>
+          </div>`;
+          });
+          document.querySelector("#list-giay").innerHTML = output;
+        })
+        .catch((err) => {
+          document.querySelector(
+            ".related .container"
+          ).innerHTML = `<h3 class="text-center mt-5">Oops ! Somethings Went Wrong <br> Please come back later !</h3>`;
+        });
+    };
+    getRelatedItem();
 
 };
 
 
 
 
-(function (){
-  let promise = axios({
-    url:'https://shop.cyberlearn.vn/api/Product',
-    method:'GET'
-  }).then(function(res){
-    console.log('arrGiay',res.data)
-    let arrGiay = res.data.content;
-    let content ='';
-    for(let index=0; index<arrGiay.length; index++){
-         let giay= arrGiay[index];
-         content += `
-         <div class="col-2">
-         <div class="card">
-             <div class="pic">
-               <img src="${giay.image}" alt="...."/>
-             </div>
-             <div class="card-body">
-                 <p class="name">${giay.name}</p>
-                 <p class="price">${giay.price}$</p>
-                 <div class="btn">
-                     <a   href="./detail.html?productid=${giay.id}"class="custom-btn btn-buy">Buy now</a>
-                 </div>
-             </div>
-             </div>
-             </div>
-        </div>   
-         
-         `;
-    }
-    document.querySelector('#list-giay').innerHTML = content;
-  })
-})();
 
 
 
