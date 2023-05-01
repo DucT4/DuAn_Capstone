@@ -55,6 +55,7 @@ window.onload = function () {
         })
 
     })();
+
         getRelatedItem = () => {
       let getRelated = axios({
         url: `https://shop.cyberlearn.vn/api/Product/getbyid?id=${myParam}`,
@@ -73,7 +74,7 @@ window.onload = function () {
                 <p class="name">${item.name}</p>
                 <p class="price">$${item.price}</p>
                 <div class="btn">
-                  <a class="custom-btn btn-buy">Buy now</a>
+                  <a class="custom-btn btn-buy" >Buy now</a>
                 </div>
               </div>
             </div>
