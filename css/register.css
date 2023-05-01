@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("/DuAn_Capstone/img/adidasNMD.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+header .logo {
+  font-size: 32px;
+  font-weight: 600;
+  color: #162938;
+  user-select: none;
+}
+header .navigation a {
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  color: #162938;
+  margin-left: 40px;
+  text-decoration: none;
+}
+header .navigation a::after {
+  content: "";
+  position: absolute;
+  top: 19px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #1d394f;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+header .navigation a:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+  transition: transform 0.5s;
+}
+header .navigation .btnLogin-popup {
+  width: 130px;
+  height: 50px;
+  background: transparent;
+  border: 2px solid #162938;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 40px;
+  color: #162938;
+  transition: 0.5s;
+}
+header .navigation .btnLogin-popup:hover {
+  background: #162938;
+  color: #fff;
+}
+
+.wrapper {
+  position: relative;
+  width: 430px;
+  height: 520px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 13px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transform: scale(0);
+  transition: transform 0.5s ease, height 0.2s ease;
+}
+.wrapper .icon-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45px;
+  height: 45px;
+  background: #162938;
+  font-size: 25px;
+  font-weight: 100;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 20px;
+  cursor: pointer;
+}
+.wrapper .form-box.login {
+  transition: transform 0.18s ease;
+  transform: translateX(0);
+}
+.wrapper .form-box.register {
+  position: absolute;
+  transform: translateX(500px);
+  transition: none;
+  margin-top: 45px;
+}
+.wrapper .form-box {
+  width: 100%;
+  padding: 40px;
+}
+.wrapper .form-box h2 {
+  font-size: 32px;
+  text-align: center;
+  color: #162938;
+}
+.wrapper .form-box form .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid #162938;
+  margin: 30px 0;
+}
+.wrapper .form-box form .input-box .icon {
+  position: absolute;
+  right: 8px;
+  font-size: 18px;
+  color: #162938;
+  line-height: 57px;
+}
+.wrapper .form-box form .input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #162938;
+  padding: 0 35px 0 5px;
+}
+.wrapper .form-box form .input-box input:focus ~ label, .wrapper .form-box form .input-box input:valid ~ label {
+  top: -5px;
+}
+.wrapper .form-box form .input-box label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #162938;
+  font-weight: 500;
+  pointer-events: none;
+  transition: 0.5s;
+}
+.wrapper .form-box form .input-box p {
+  position: absolute;
+  top: 50px;
+  right: 3px;
+  color: wheat;
+  font-size: 12px;
+  font-weight: 300px;
+  margin-left: 30px;
+  margin-top: 3px;
+}
+.wrapper .form-box form .input-box .password {
+  margin-left: 10px;
+}
+.wrapper .form-box form .remember-forgot {
+  font-size: 14px;
+  color: #162938;
+  font-weight: 500;
+  margin: -15px 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper .form-box form .remember-forgot label input {
+  accent-color: #162938;
+  margin-right: 3px;
+}
+.wrapper .form-box form .remember-forgot a {
+  color: #162938;
+  text-decoration: none;
+}
+.wrapper .form-box form .remember-forgot a:hover {
+  text-decoration: underline;
+}
+.wrapper .form-box form .check label .male {
+  margin-left: 100px;
+  margin-top: 35px;
+}
+.wrapper .form-box form .check label .female {
+  margin-top: 35px;
+}
+.wrapper .form-box form .condition {
+  margin-top: 30px;
+}
+.wrapper .form-box form .condition a {
+  margin-left: -20px;
+}
+.wrapper .form-box form .btn {
+  width: 100%;
+  height: 45px;
+  background: #162938;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.5s;
+}
+.wrapper .form-box form .btn:hover {
+  background-color: #fff;
+  color: #162938;
+}
+.wrapper .form-box form .login-register {
+  font-size: 14px;
+  color: #162938;
+  text-align: center;
+  font-weight: 500;
+  margin: 25px 0 10px;
+}
+.wrapper .form-box form .login-register p a {
+  color: #162938;
+  text-decoration: none;
+  font-weight: 600;
+}
+.wrapper .form-box form .login-register p a:hover {
+  text-decoration: underline;
+}
+
+.wrapper.active .form-box.login {
+  transition: none;
+  transform: translateX(-620px);
+}
+
+.wrapper.active .form-box.register {
+  transition: transform 0.18s ease;
+  transform: translateX(0);
+}
+
+.wrapper.active-popup {
+  transform: scale(1);
+}
+
+.wrapper.active {
+  height: 560px;
+  width: 650px;
+}
