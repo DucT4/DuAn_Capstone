@@ -454,3 +454,35 @@
         opacity: 1;
     }
 }
+
+/*responsive footer*/
+@media (max-width:678px) {
+    .footer {
+        .background {
+            .row {
+                .item {
+                    margin-bottom: -21px;
+                    h3 {
+                        font-size: 14px;
+                    }
+
+                    ul {
+                        li {
+                            font-size: 11px;
+                        }
+                    }
+
+                    p {
+                        font-size: 11px;
+                        margin-bottom: -3px;
+                    }
+
+                    a {
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+    }
+
+}

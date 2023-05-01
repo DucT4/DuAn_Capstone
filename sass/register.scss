@@ -81,7 +81,7 @@ header {
             font-size: 16px;
             font-weight: 600;
             margin-left: 40px;
-            color:#162938;
+            color: #162938;
             transition: .5s;
 
             &:hover {
@@ -106,7 +106,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    // overflow: hidden;
     transform: scale(0);
     transition: transform .5s ease, height .2s ease;
 
@@ -194,18 +194,21 @@ header {
                     pointer-events: none;
                     transition: .5s;
                 }
-                p{
+
+                p {
                     position: absolute;
                     top: 50px;
                     right: 3px;
-                    color:wheat;
-                    font-size:12px;
+                    color: wheat;
+                    font-size: 12px;
                     font-weight: 300px;
-                     margin-left: 30px;
+                    margin-left: 30px;
                     margin-top: 3px;
                 }
-                .password{
-                    margin-left: 10px;;
+
+                .password {
+                    margin-left: 10px;
+                    ;
                 }
             }
 
@@ -247,11 +250,13 @@ header {
                     }
                 }
             }
-            .condition{
+
+            .condition {
                 margin-top: 30px;
-                   a{
+
+                a {
                     margin-left: -20px;
-                   }
+                }
             }
 
             .btn {
@@ -314,4 +319,156 @@ header {
 .wrapper.active {
     height: 560px;
     width: 650px;
+}
+
+
+
+@media (max-width:678px) {
+    body {
+        min-height: 100vh;
+
+        header {
+            padding: 11px 100px;
+
+            .logo {
+                margin-left: -70px;
+                margin-bottom: 54px;
+            }
+
+            .navigation {
+                margin-top: -43px;
+
+                a {
+                    margin-left: 10px;
+                }
+
+                .btnLogin-popup {
+                    margin-left: 10px;
+
+                }
+            }
+        }
+
+        .wrapper {
+            width: 318px;
+            height: 435px;
+            margin-top: 18px;
+
+            .icon-close {
+                width: 27px;
+                height: 27px;
+                border-bottom-left-radius: 14px;
+            }
+
+            .form-box {
+                width: 100%;
+                height: 405px;
+                padding: 40px;
+
+                h2 {
+                    font-size: 32px;
+                    text-align: center;
+                    color: #162938;
+                }
+
+                form {
+                    .input-box {
+                        .icon {
+                            font-size: 15px;
+                        }
+
+                        p {
+
+
+                            .password {
+                                margin-left: 10px;
+                                ;
+                            }
+                        }
+
+                        .remember-forgot {
+
+                            label {
+                                input {
+                                    font-size: 11px;
+                                }
+                            }
+                            a {
+                                font-size: 11px;
+                            }
+                        }
+
+                        .check {
+                            label {
+                                .male {
+                                    margin-left: 100px;
+                                    margin-top: 35px;
+                                }
+
+                                .female {
+                                    margin-top: 35px;
+
+                                }
+                            }
+                        }
+
+                        .condition {
+                            margin-top: 30px;
+
+                            a {
+                                margin-left: -20px;
+                            }
+                        }
+
+                        .btn {
+                            width: 80%;
+                            height: 30px;
+                        }
+
+                        .login-register {
+
+                            p {
+                                margin-top: -19px;
+                                margin-bottom: 16px;
+                            }
+                        }
+                    }
+                }
+
+                .form-box.login {
+                    width: 290px;
+                    height: 375px;
+                }
+
+
+
+                .icon-close {
+                    width: 27px;
+                    height: 27px;
+                    border-bottom-left-radius: 14px;
+                }
+
+                .remember-forgot {
+                    label {
+                        input {
+                            font-size: 11px;
+                        }
+
+                        a {
+                            font-size: 11px;
+                        }
+                    }
+                }
+            }
+        }
+        .wrapper .form-box.register{
+            width:100%;
+            height: 550px;
+        }
+        .wrapper.active {
+            height: 560px;
+            width: 471px;
+        }
+    }
+
 }
